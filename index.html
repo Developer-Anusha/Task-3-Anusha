@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Interactive Dashboard</h1>
+
+        <!-- Dark Mode -->
+        <button id="themeBtn">🌙 Dark Mode</button>
+
+        <!-- Welcome Message -->
+        <div class="card">
+            <h2>Welcome Section</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="showMessage()">Submit</button>
+            <p id="message"></p>
+        </div>
+
+        <!-- Counter -->
+        <div class="card">
+            <h2>Counter App</h2>
+            <h1 id="count">0</h1>
+
+            <button onclick="increase()">+</button>
+            <button onclick="decrease()">-</button>
+            <button onclick="resetCounter()">Reset</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
